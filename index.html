@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aran Díez</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alegreya Sans SC"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body class="body__wrapper">
+    <header class="header">
+      <h1 class="header__title">CASINO</h1>
+      <img src="/images/night.png" alt="Night" class="image imageNight" />
+      <!-- <img src="/images/logo.png" alt="Logo" class="image imageLogo" /> -->
+    </header>
+    <main class="main">
+      <section class="main__section1">
+        <img
+          src="/images/ruleta.png"
+          alt="Roulette"
+          class="js-roulette image imageRoulette"
+        />
+        <img src="/images/cartas.png" alt="Cards" class="image imageCards" />
+        <img src="/images/dados.png" alt="Dice" class="image imageDice" />
+        <img src="/images/ficha1.png" alt="Coin1" class="image imageCoin" />
+        <img src="/images/ficha2.png" alt="Coin2" class="image imageCoin2" />
+        <img
+          src="/images/light1purple.png"
+          alt="Lightbeam"
+          class="image imageBeam1"
+        />
+        <img
+          src="/images/light2purple.png"
+          alt="Lightbeam"
+          class="image imageBeam2"
+        />
+      </section>
+      <section class="main__section2">
+        <h2 class="main__section2--title">Try your luck!</h2>
+        <h2 class="main__section2--title2">Choose your number:</h2>
+        <form action="">
+          <select class="js-chosenNumber" name="" id="">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+          <input
+            class="js-amount"
+            placeholder="How much?"
+            type="number"
+            name=""
+            id=""
+          />
+          <input class="js-playBtn playBtn" type="submit" value="Play" />
+          <input class="js-resetBtn hidden" type="submit" value="Reset" />
+        </form>
+      </section>
+      <section class="main__section3">
+        <h2 class="js-message main__section2--title2">Lets play!</h2>
+        <p class="js-text main__section3--text">Balance: 50</p>
+        <p class="determinations">
+          *If you don´t guess the number you loose the bet. If you guess it you
+          earn double.
+        </p>
+      </section>
+      <script type="text/javascript" src="./js/main.js"></script>
+    </main>
+  </body>
+</html>
