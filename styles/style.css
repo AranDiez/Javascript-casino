@@ -7,17 +7,21 @@
   font-family: myCasinoFont;
   src: url(../fonts/biz.ttf);
 } */
+
 .header {
   color: #f0ca4c;
-  margin: 30px;
-  padding: 30px;
+  margin-top: -60px;
+  padding-top: 30px;
+  margin-bottom: -40px;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
+  width: 100vw;
 }
 .header__title {
   font-family: 'Alegreya Sans SC';
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,20 +44,28 @@
   );
   background-size: cover;
   height: 100vh;
+  width: 100vw;
 }
 .main {
   color: #f0ca4c;
-  margin: 30px;
+  /* margin: 30px; */
   padding: 30px;
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: center;
+  width: 100vw;
+  /* -------- esto hace que se centre pero en peque */
+  /* margin-left: 30px; */
+  margin-left: 30px;
 }
+
 .main__section1 {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .imageRoulette {
   width: 350px;
   position: relative;
@@ -90,6 +102,7 @@
 .main__section3 {
   transform: translate(0px, -580px);
 }
+
 .main__section2--title {
   display: flex;
   justify-content: center;
@@ -155,3 +168,13 @@
     transform: rotate(360deg);
   }
 }
+@media all and (min-width: 470px) {
+  .main {
+    margin-left: 0px;
+  }
+// ----------------mediaqueries
+/* @media all and (min-width: 470px) {
+  .main {
+    margin-left: 0px;
+  }
+} */
